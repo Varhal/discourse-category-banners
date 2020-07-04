@@ -1,5 +1,9 @@
 div[class^="category-title-header"] {
   width: 100%;
+  border-left: 1px solid #e9e9e9;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+  
   .category-title-contents {
     padding: 24px;
     svg {
