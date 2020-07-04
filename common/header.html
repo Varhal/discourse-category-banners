@@ -38,7 +38,8 @@
                   }
 
                   return h('div.category-title-header' + " .category-banner-" + category.slug, {
-                     
+                      "attributes" : {
+                          "style" : ""
                       }
                   }, h('div.category-title-contents', [
                   ifProtected(),
