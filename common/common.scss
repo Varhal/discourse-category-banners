@@ -1,12 +1,7 @@
 div[class^="category-title-header"] {
-  padding-top: 60px;
-  display: flex;
-  text-align: center;
   width: 100%;
-  justify-content: center;
   .category-title-contents {
-    max-width: 500px;
-    padding: 40px;
+    padding: 30px;
     svg {
       height: 1.5em;
       width: 1.1em;
@@ -24,8 +19,4 @@ div[class^="category-title-header"] {
     }
   }
 }
-.category-header {
-  #main-outlet {
-    padding-top: 20px;
-  }
 }
