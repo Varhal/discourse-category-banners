@@ -1,10 +1,7 @@
 div[class^="category-title-header"] {
     width: 100%;
-    border-left: 1px solid #e9e9e9;
-    border-right: 1px solid #e9e9e9;
-    border-bottom: 1px solid #e9e9e9;
-    box-sizing: border-box;
-    margin-bottom: -1px;
+    background: #fff;
+    margin-bottom: 16px;
   
   .category-title-contents {
     padding: 24px;
