@@ -33,7 +33,7 @@
 
                   function logoImg() {
                      if(category.uploaded_logo){
-                        return [h('img',{"attributes" : {"src" : category.uploaded_logo.url}})];
+                        return [h('div.category-logo.aspect-image','img',{"attributes" : {"src" : category.uploaded_logo.url}})];
                       }
                   }
                   
@@ -48,8 +48,7 @@
                           "style" : ""
                       }
                   }, h('div.category-title-contents', [
-                  ifProtected(),
-                  h('div.category-logo.aspect-image', logoImg()), 
+                  ifProtected(), logoImg()), 
                   h('h1', category.name),
                   h('div.category-title-description',catDesc())
                   ]),
