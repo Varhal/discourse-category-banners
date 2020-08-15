@@ -33,7 +33,7 @@
 
                   function logoImg() {
                      if(category.uploaded_logo){
-                        return [h('img',{"attributes" : {"src" : siteSettings.logo_small}})];
+                        return [h('img',{"attributes" : {"src" : category.parentCategory.uploaded_logo.url}})]; 
                       }
                   }
                   
