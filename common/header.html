@@ -33,7 +33,7 @@
 
                   function logoImg() {
                      if(category.uploaded_logo){
-                        return [h('img',{"attributes" : {"src" : small}})];
+                        return [h('img',{"attributes" : {"src" : category.uploaded_logo.url}})];
                       }
                   }
                   
