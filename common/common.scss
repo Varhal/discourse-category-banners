@@ -1,24 +1,21 @@
+.category-header-widget {
+  padding-top: 48px;
+  margin-bottom: -60px;
+}
+
 div[class^="category-title-header"] {
     width: 100%;
-    background: #fff;
-    margin-bottom: 16px;
+    background: $secondary;
+    color $primary;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
   
   .category-title-contents {
-    padding: 24px;
-    svg {
-      height: 1.5em;
-      width: 1.1em;
-      margin-right: 0.25em;
-    }
+    padding: 60px;
+    max-width: 740px;
+    margin: 0 auto;
+    
     h1 {
       display: inline;
-    }
-  }
-  .category-title-description {
-    a,
-    a:visited {
-      color: inherit;
-      text-decoration: underline;
     }
   }
 }
