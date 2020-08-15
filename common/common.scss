@@ -1,8 +1,3 @@
-.category-header-widget {
-  padding-top: 48px;
-  margin-bottom: -45px;
-}
-
 div[class^="category-title-header"] {
     width: 100%;
     background: #fff;
@@ -10,16 +5,11 @@ div[class^="category-title-header"] {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
   
   .category-title-contents {
-    padding: 60px;
-    max-width: 680px;
-    margin: 0 auto;
-    text-align: center;
+    padding: 24px;
+    margin-bottom: 16px;
     
     h1 {
       display: inline;
     }
   }
-}
-.category-heading {
-  display:none;
 }
