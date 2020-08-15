@@ -18,3 +18,26 @@ exceptions:
   default: ""
   type: list
   description: "Banner will not show for these categories"
+show_site_logo:
+  type: bool
+  default: true
+  description: 'Show the small site logo if a category logo is not set'  
+  
+position_logo:
+  type: enum
+  default: left  
+  choices:
+  - left
+  - right
+  - top
+  description: 'Position of the logo within the header. Left and right display the logo inline with the text<br>Top displays the logo above aligned with the text'  
+  
+size_logo:
+  type: enum
+  default: standard  
+  choices:
+  - standard
+  - small  
+  - original
+  description: 'Position of the logo within the header.<br>Small is 40px high similar to a sub
+  category box logo<br>Standard is 150px high<br>Original is the size of the image uploaded'    
