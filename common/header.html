@@ -37,37 +37,22 @@
                       }
                   }
 
-                  function catLogo() {
-                        if(category.uploaded_logo) {
-                            return "background-image: url('" + category.uploaded_logo.url + "'); ";
-                        }
-                        return "";
-                    }
-                  
-                    function titMargin() {
-                        if(category.uploaded_logo) {
-                            marg = ((category.uploaded_logo.width / category.uploaded_logo.height) * 100);
-                            return 'margin: 0 ' + marg + 'px;';
-                        }
-                        return 'margin: 0 150px;';
-                    }
+                  return [h('img',{"attributes" : {"src" : siteSettings.logo_small}})];
                   
                 return h('div.category-title-header' + " .category-banner-" + category.slug, {
                         "attributes" : {
                                 "style" : catLogo() + ""
                             }
-                        }, h('div', [
-                                h('div.category-title-contents',{
-                                    "attributes" : {"style" : titMargin()}
-                                }, [
-                                    ifProtected(),
-                                        h('h1', category.name), 
-                                    h('div.category-title-description',catDesc())
-                                ]),
-                            ]),
+                       }, h('div.category-title-contents', [
+                       h('div.category-logo.aspect-image', logoImg()), 
+                  h('div.category-title-name', 
+                  ifProtected(),
+                  h('h1', category.name),
+                  h('div.category-title-description',catDesc())
+                  ]),
 
-                        );
-                }
+                  );
+              }
           } else {
               $("body").removeClass("category-header");
           }
