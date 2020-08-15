@@ -31,6 +31,12 @@
                       }
                   }
 
+                  function logoImg() {
+                     if(category.uploaded_logo){
+                        return [h('img',{"attributes" : {"src" : siteSettings.logo_small}})];
+                      }
+                  }
+                  
                   function ifProtected() {
                       if(category.read_restricted) {
                           return lockIcon;
@@ -41,7 +47,8 @@
                       "attributes" : {
                           "style" : ""
                       }
-                  }, h('div.category-title-contents', [
+                  }, h('div.category-title-contents', [ 
+                  h('div.category-logo.aspect-image', logoImg()), [
                   ifProtected(),
                   h('h1', category.name),
                   h('div.category-title-description',catDesc())
