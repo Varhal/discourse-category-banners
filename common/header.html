@@ -37,6 +37,21 @@
                       }
                   }
 
+                  function catLogo() {
+                        if(category.uploaded_logo) {
+                            return "background-image: url('" + category.uploaded_logo.url + "'); ";
+                        }
+                        return "";
+                    }
+                  
+                    function titMargin() {
+                        if(category.uploaded_logo) {
+                            marg = ((category.uploaded_logo.width / category.uploaded_logo.height) * 100);
+                            return 'margin: 0 ' + marg + 'px;';
+                        }
+                        return 'margin: 0 150px;';
+                    }
+                  
                   return h('div.category-title-header' + " .category-banner-" + category.slug, {
                       "attributes" : {
                           "style" : ""
