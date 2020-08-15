@@ -52,18 +52,22 @@
                         return 'margin: 0 150px;';
                     }
                   
-                  return h('div.category-title-header' + " .category-banner-" + category.slug, {
-                      "attributes" : {
-                          "style" : ""
-                      }
-                  }, h('div.category-title-contents', [
-                  ifProtected(),
-                  h('h1', category.name),
-                  h('div.category-title-description',catDesc())
-                  ]),
+                return h('div.category-title-header' + " .category-banner-" + category.slug, {
+                        "attributes" : {
+                                "style" : catLogo() + ""
+                            }
+                        }, h('div', [
+                                h('div.category-title-contents',{
+                                    "attributes" : {"style" : titMargin()}
+                                }, [
+                                    ifProtected(),
+                                        h('h1', category.name), 
+                                    h('div.category-title-description',catDesc())
+                                ]),
+                            ]),
 
-                  );
-              }
+                        );
+                }
           } else {
               $("body").removeClass("category-header");
           }
