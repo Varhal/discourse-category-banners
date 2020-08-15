@@ -33,7 +33,7 @@
 
                   function logoImg() {
                      if(category.uploaded_logo){
-                        return [h('div.category-logo.aspect-image img',{"attributes" : {"src" : category.uploaded_logo.url}})];
+                        return [h('img',{"attributes" : {"src" : siteSettings.logo_small}})];
                       }
                   }
                   
@@ -48,10 +48,12 @@
                           "style" : ""
                       }
                   }, h('div.category-title-contents', [
-                  ifProtected(),
-                  logoImg()), 
-                  h('h1', category.name),
-                  h('div.category-title-description',catDesc())
+                    ifProtected(),
+                    logoImg(), [
+                      h('div.category-logo.aspect-image', logoImg()), 
+                    ]
+                    h('h1', category.name),
+                    h('div.category-title-description',catDesc())
                   ]),
 
                   );
