@@ -8,9 +8,14 @@ div[class^="category-title-header"] {
     padding: 24px;
     margin-bottom: 16px;
     
-    .category-logo.aspect-image img {
-       width: 60px;
-       height: 60px;
+    .category-logo.aspect-image {
+       margin:0;
+        
+        img {
+           width: 60px;
+           height: 60px; 
+           margin: 0.25em 1em 0.5em 0;
+        }
     }
       
     h1 {
