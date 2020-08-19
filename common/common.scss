@@ -1,9 +1,13 @@
 div[class^="category-title-header"] {
     width: 100%;
     color: #222;
+    padding:30px;
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    border-top: 1px solid #e9ecef;
   
   .category-title-contents {
-    margin-bottom: 30px;
+    
     
     .category-logo.aspect-image {
        margin:0;
