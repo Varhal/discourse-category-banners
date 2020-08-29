@@ -55,6 +55,7 @@
                       }
                   }, 
                   h('div.category-title-contents', [
+                  h('div.category-bg', logoBg()),
                   ifProtected(),
                   h('div.category-logo.aspect-image', logoImg()), 
                   h('h1', category.name),
