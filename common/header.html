@@ -37,6 +37,12 @@
                       }
                   }
                   
+                   function logoBg() {
+                     if(category.uploaded_background){
+                        return [h('img',{"attributes" : {"src" : category.uploaded_background.url}})];
+                      }
+                  }
+                  
                   function ifProtected() {
                       if(category.read_restricted) {
                           return lockIcon;
@@ -47,8 +53,10 @@
                       "attributes" : {
                           "style" : ""
                       }
-                  }, h('div.category-title-contents', [
+                  }, 
+                  h('div.category-title-contents', [
                   ifProtected(),
+                  h('div.category-backgound', logoBg()),
                   h('div.category-logo.aspect-image', logoImg()), 
                   h('h1', category.name),
                   h('div.category-title-description',catDesc())
