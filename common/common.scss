@@ -5,6 +5,16 @@ div[class^="category-title-header"] {
     border-left: 1px solid #e9ecef;
   
   .category-title-contents {
+    .category-bg {
+       max-height: 100%;
+       margin: -28px -28px 28px -28px;   
+        
+        img {
+           width: 100%;
+           max-height: 180px;
+           object-fit: cover;
+        }
+    }
     .category-title-description {
         line-height: 23px;
             margin-top: 6px;
