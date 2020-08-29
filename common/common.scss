@@ -19,6 +19,11 @@ div[class^="category-title-header"] {
          line-height: 27px;
          margin-top: 6px;
          font-size: 17px;
+        
+        a {
+            display: block;
+            margin-top: 4px;
+        }
     }
     .category-logo.aspect-image {
        margin:0;
