@@ -54,9 +54,9 @@
                           "style" : ""
                       }
                   }, 
+                  h('div.category-backgound', logoBg()),
                   h('div.category-title-contents', [
                   ifProtected(),
-                  h('div.category-backgound', logoBg()),
                   h('div.category-logo.aspect-image', logoImg()), 
                   h('h1', category.name),
                   h('div.category-title-description',catDesc())
