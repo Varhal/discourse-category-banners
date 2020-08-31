@@ -27,7 +27,7 @@ div[class^="category-title-header"] {
             width: fit-content;
             color:$primary-medium;
         }
-        &:hover {
+        a:hover {
             border-bottom: none;
         }
     }
