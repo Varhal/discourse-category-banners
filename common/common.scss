@@ -28,7 +28,7 @@ div[class^="category-title-header"] {
             color:$primary-medium;
         }
         a:hover {
-            border-bottom: none;
+            border-bottom: 1px dotted rgba(129,129,129,.0);
         }
     }
     .category-logo.aspect-image {
