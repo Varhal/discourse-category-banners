@@ -23,6 +23,11 @@ div[class^="category-title-header"] {
         a {
             display: block;
             margin-top: 4px;
+            border-bottom: 1px dotted rgba(129,129,129,.6);
+            width: fit-content;
+        }
+        &:hover {
+            border-bottom: none);
         }
     }
     .category-logo.aspect-image {
